@@ -58,18 +58,21 @@ function loadQuestion() {
     resultElement.style.display = "none";
 }
 
-
+//Evalua las respuestas y asigna puntaje 
 function checkAnswer() {
     var selectedOption = document.querySelector('input[name="answer"]:checked');
     if (selectedOption) {
         var answer = parseInt(selectedOption.value);
         if (answer === questions[currentQuestion].answer) {
+
+        {
             score++;
         }
+
         currentQuestion++;
         if (currentQuestion < questions.length) {
             loadQuestion();
-        } else {
+        } }else {
             showResult();
         }
     }
