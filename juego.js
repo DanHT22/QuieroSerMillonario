@@ -54,6 +54,7 @@ function loadQuestion() {
         optionsElement.appendChild(option);
         optionsElement.appendChild(document.createTextNode(questions[currentQuestion].options[i]));
         optionsElement.appendChild(document.createElement("br"));
+        
     }
     resultElement.style.display = "none";
 }
@@ -85,3 +86,59 @@ function showResult() {
 }
 
 loadQuestion();
+
+//Me encnta esta idea REVISAR BIEN
+var botonLlamar = document.getElementById("llamar");
+var botonCincuenta = document.getElementById("cincuenta");
+var botonPreguntar = document.getElementById("pregunPublico");
+
+function llamarAmigo() {
+    botonLlamar.style.display = "none";
+    alert("Llamando a Amigo ...")
+}
+function eliminarDos() {
+    botonCincuenta.style.display = "none"
+    // for (var i = 0; i < questions[currentQuestion].options.length; i++){
+    //     if () {
+    //     }
+    // }
+}
+function preguntarPublico() {
+    botonPreguntar.style.display = "none"
+    alert("...Publico contestando...")   
+}
+
+// var wildcards = [
+//     {
+//         wildcard: "¿Quieres ayuda?",
+//         optionsW: ["50%", "Llamar a un amigo", "Preguntarle al publico"]}
+    
+// ];
+
+// var currentWildcard = 0;
+
+// // Funcion para crear campos en HTML
+// function loadWildcard() {
+//     // se establecen las variables y se traen los elementos de html 
+//     var wildcardElement = document.getElementById("wildcard");
+//     var optionsWElement = document.getElementById("optionsW");
+   
+//     // Crear elemento que se manda al HTML
+//     wildcardElement.textContent = wildcards[currentWildcard].wildcard;
+//     optionsWElement.innerHTML = "";
+//     // crear campo en HTML
+//     for (var i = 0; i < wildcards[currentWildcard].optionsW.length; i++) {
+//         var option = document.createElement("input");
+//         option.type = "radio";
+//         option.name = "answer";
+//         option.value = i;
+//         optionsWElement.appendChild(option);
+//         optionsWElement.appendChild(document.createTextNode(wildcards[currentWildcard].optionsW[i]));
+//         optionsWElement.appendChild(document.createElement("br"));
+//     }
+    
+// }
+
+// if (currentQuestion < questions.length) {
+//     loadQuestion();
+// }

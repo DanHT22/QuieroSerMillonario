@@ -24,9 +24,22 @@
     <h1>Juego de Preguntas</h1>
     <div id="question"></div>
     <div id="options"></div>
-    <button onclick="checkAnswer()">Responder</button>
-    <div id="result"></div>
     
+    <div id="result"></div>
+    <div id="wildcard"></div>
+    <div id="optionsW"></div>
+    <div>
+        <button id="llamar" onclick="llamarAmigo()">Llamar a un Amigo</button>
+        <br><br>
+        <button id="cincuenta" onclick="eliminarDos()">50 %</button>
+        <br><br>
+        <button id="pregunPublico" onclick="preguntarPublico()">Preguntarle al publico</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <button onclick="checkAnswer()">Responder</button>
+
     <script src="juego.js"></script>
 </body>
 
